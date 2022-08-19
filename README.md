@@ -8,3 +8,5 @@ My website, built with following technologies:
 - [react-router v6.3.0](https://reactrouter.com/)
 - [tailwindcss v3.1.8](https://tailwindcss.com/)
 - [pnpm v7.5.2](https://pnpm.io/)
+
+[Click here](https://lexmin0412.github.io/spacex/) to visit.
