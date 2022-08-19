@@ -8,7 +8,7 @@ import Layout from './../components/layouts/layout'
 
 export default function RouterEntry() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename='/spacex'>
 			<Layout>
 				<Routes>
 					{
