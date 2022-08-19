@@ -1,5 +1,7 @@
 import Home from "./home"
 import Blogs from './blogs'
+import Libs from "./libs"
+import Tools from "./tools"
 
 const routeList = [
 	{
@@ -10,6 +12,16 @@ const routeList = [
 	{
 		path: '/blogs',
 		component: Blogs,
+		children: []
+	},
+	{
+		path: '/libs',
+		component: Libs,
+		children: []
+	},
+	{
+		path: '/tools',
+		component: Tools,
 		children: []
 	}
 ]

@@ -10,6 +10,14 @@ const innerLinks = [
 		path: '/blogs',
 		text: 'Blogs',
 	},
+	{
+		path: '/libs',
+		text: 'Libs',
+	},
+	{
+		path: '/tools',
+		text: 'Tools',
+	},
 ]
 
 const outerLinks = [
