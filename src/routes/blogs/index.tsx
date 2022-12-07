@@ -7,7 +7,7 @@ export default function Blogs() {
 			<WujieReact
 				width="100%"
 				height="100%"
-				name="blog-wa>"
+				name="blog-app>"
 				url={BLOG_URL}
 				degrade={true}
 				sync={true}
