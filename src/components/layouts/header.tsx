@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import IconGithub from '@/assets/github.svg'
 
 const innerLinks = [
@@ -28,41 +28,40 @@ const outerLinks = [
 ]
 
 export default function Header() {
+	const naivgate = useNavigate()
 	return (
 		<div className="flex items-center justify-between h-16 leading-16 px-6">
-			<Link to='/'>Lexmin0412</Link>
-			<div className='flex items-center'>
-				<div className="inner-link">
-					{
-						innerLinks.map((link: any) => {
-							return (
-								<Link
-									className='mr-5'
-									key={link.path}
-									to={link.path}
-								>
-									{link.text}
-								</Link>
-							)
-						})
-					}
+			<div onClick={() => naivgate('/')}>Lexmin0412</div>
+			<div className="flex items-center">
+				<div className="inner-link flex">
+					{innerLinks.map((link: any) => {
+						return (
+							<div
+								className="mr-5 cursor-pointer"
+								key={link.path}
+								onClick={() => naivgate(link.path)}
+							>
+								{link.text}
+							</div>
+						)
+					})}
 				</div>
 				<div className="outer-link">
-					{
-						outerLinks.map((link: any) => {
-							return (
-								<a
-									key={link.url}
-									href={link.url}
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<img src={link.icon} alt="" />
-								</a>
-							)
-						})
-					}
-
+					{outerLinks.map((link: any) => {
+						return (
+							<a
+								key={link.url}
+								href={link.url}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src={link.icon}
+									alt=""
+								/>
+							</a>
+						)
+					})}
 				</div>
 			</div>
 		</div>

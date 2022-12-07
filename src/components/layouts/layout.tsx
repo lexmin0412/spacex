@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
 	return (
-		<div>
+		<div className="flex flex-col w-screen h-screen">
 			<Header />
 			<Content>
 				{props.children}

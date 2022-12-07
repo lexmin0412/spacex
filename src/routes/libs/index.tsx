@@ -1,3 +1,5 @@
+import Container from "@/components/container"
+
 export default function Libs() {
 
 	const libs = [
@@ -24,21 +26,19 @@ export default function Libs() {
 	]
 
 	return (
-		<div>
+		<Container>
 			<div>
-				following libs are created and mainained by me:
-			</div>
-			<div>
-				{
-					libs.map((lib: any) => {
+				<div>following libs are created and mainained by me:</div>
+				<div>
+					{libs.map((lib: any) => {
 						return (
 							<div key={lib.name}>
 								<li>{lib.name}</li>
 							</div>
 						)
-					})
-				}
+					})}
+				</div>
 			</div>
-		</div>
+		</Container>
 	)
 }

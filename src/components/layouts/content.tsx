@@ -4,10 +4,10 @@ interface ContentProps {
 
 export default function Content(props: ContentProps) {
 	return (
-		<div className="px-6"
-			style={{
-				minHeight: 'calc(100vh - 128px)',
-			}}
+		<div className="flex-1"
+			// style={{
+			// 	minHeight: 'calc(100vh - 128px)',
+			// }}
 		>
 			{props.children}
 		</div>
